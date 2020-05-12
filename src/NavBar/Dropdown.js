@@ -23,9 +23,17 @@ class Dropdown extends Component
         <li><NavLink to="/tvshows/upcoming">Upcoming Shows</NavLink></li>
         <li className="divider" tabindex="-1"></li>
         <li><NavLink to="/tvshows">Popular</NavLink></li>
-        <li className="divider" tabindex="-1"></li>
+        <li className="divider" tabindex="-1"></li> 
         <li><NavLink to="#!">three</NavLink></li>
-        </ul> 
+        </ul>
+{/* Trending Dropdown */}
+        <NavLink className='dropdown-trigger' to='#' data-target='dropdown3'>{this.props.trendingTitle}</NavLink>
+        <ul id='dropdown3' className='dropdown-content dropdown'>
+        <li><NavLink to="/trending/movies">Trending Movies</NavLink></li>
+        </ul>
+
+
+        
     </div>
   
         )

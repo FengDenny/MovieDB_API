@@ -15,7 +15,7 @@ class Trending extends Component {
     render()
     {
         return(
-            <div> <h1 className="light-blue-text text-darken-1">Trending Dramas</h1></div>
+            <div> <h1 className="light-blue-text text-darken-1">Trending</h1></div>
         )
     }
 

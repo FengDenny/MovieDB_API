@@ -32,7 +32,7 @@ function App() {
      <Route  path="/tvshows/:tvShowID" component={TVDetails} />
      {/* Trending Route */}
      <Route  path="/trending" component={Trending} />
-     <Route  path="/trending/trending-movies" component={TrendingMovies} />
+     <Route  path="/trending/movies" component={TrendingMovies} />
     </div>
     </div>
     </Router>
