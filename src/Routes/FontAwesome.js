@@ -4,11 +4,9 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import {library} from '@fortawesome/fontawesome-svg-core'
 library.add(faSpinner);
 
-
 // npm i --save @fortawesome/fontawesome-svg-core
 // npm i --save @fortawesome/free-solid-svg-icons
 // npm i --save @fortawesome/react-fontawesome
-
 
 function FontAwesome()
 {
@@ -17,5 +15,4 @@ function FontAwesome()
     )
 
 }
-
 export default FontAwesome

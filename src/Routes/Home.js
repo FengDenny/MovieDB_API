@@ -46,12 +46,11 @@ class Home extends Component {
                          </Link>
                      </div>   
                 )
-
-
             })
         return(
          
             <div className="row">
+                <h1 className="light-blue-text text-darken-1">Now Playing</h1>
                {movieGrid}
             </div>
         )

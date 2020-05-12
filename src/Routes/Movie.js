@@ -4,6 +4,7 @@ import config from '../config'
 import FontAwesome from './FontAwesome'
 
 
+
 class Movie extends Component {
 
     constructor()
@@ -24,7 +25,7 @@ class Movie extends Component {
     
         axios.get(singleMovieUrl).then((res) => {
 
-            console.log(res.data)
+          //  console.log(res.data)
             this.setState({
                 movie:res.data
             })
@@ -36,7 +37,7 @@ class Movie extends Component {
 
 
     render(){
-        console.log(this.props.match)
+        //console.log(this.props.match)
         if(this.state.movie.title === undefined)
         {
             return(
@@ -53,6 +54,8 @@ class Movie extends Component {
             <div>
                <img src= {imageURL} alt="cover" />
                <p> Title: {movie.title}</p>
+               <p> Release Date: {movie.release_date}</p>
+
                <p> Budget: {movie.budget}</p>
                <p> Tagline: {movie.tagline}</p>
                <p> Overview: {movie.overview}</p>
